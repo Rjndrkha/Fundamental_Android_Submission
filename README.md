@@ -1,5 +1,5 @@
-# GithubUserApp2
-Before I explain how this application works and submission checklist, I want to say **thank you** to **Dicoding Indonesia** for providing "Belajar Fundamental Aplikasi Android" class and **thank you** to **Dicoding Reviewer** for approving my second submission.
+# Github User App
+
 ### How the app works
 1. this app will be displayed a list of Github users from Github REST API
 2. if an app user clicks on one of the Github users from the list, the details of the Github user that was clicked will be displayed
@@ -17,13 +17,9 @@ Before I explain how this application works and submission checklist, I want to 
         width="230" />
 </p>
 
-### Submission CheckList
-- Mempertahankan fitur pada Submission 1.
-- Pencarian User menggunakan data dari API berjalan dengan baik.
-- Menggunakan TabLayout, BottomNavigationView, atau yang lainnya sebagai navigasi antara halaman List Follower dan List Following.
-- Terdapat indikator loading saat aplikasi memuat data di semua halaman.
 #### Reviewer Rating 
 :star: :star: :star: :star: :star:
+
 ### Dependencies :
 - [Lifecycle & Livedata](https://developer.android.com/jetpack/androidx/releases/lifecycle)
 - [Retrofit 2](https://square.github.io/retrofit/)    
