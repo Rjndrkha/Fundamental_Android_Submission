@@ -5,20 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="96dp"
     android:layout_margin="4dp"
-    app:cardBackgroundColor="@color/white"
+
     app:cardCornerRadius="18dp"
     app:cardElevation="10dp"
-    app:strokeColor="@color/black_3333"
+    app:strokeColor="#9A9A9A"
     app:strokeWidth="2dp">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circleImageView"
-            android:layout_width="90dp"
-            android:layout_height="80dp"
+            android:layout_width="98dp"
+            android:layout_height="86dp"
             android:layout_marginStart="8dp"
             android:src="@drawable/github_logo"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -30,11 +29,11 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:fontFamily="monospace"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/consolas"
             android:text="@string/name"
-            android:textColor="@color/black_3333"
-            android:textSize="24sp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
             app:layout_constraintEnd_toEndOf="parent"

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context="com.rajendra.dicodingsubmm.ui.follows.FollowsFragment">
+    tools:context=".ui.follows.FollowsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_follows"
@@ -32,5 +31,14 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/loader" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_no_data"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/no_data" />
 
 </FrameLayout>

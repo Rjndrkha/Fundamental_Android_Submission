@@ -4,17 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context="com.rajendra.dicodingsubmm.ui.main.MainActivity">
+    style="@style/Background"
+    tools:context=".ui.main.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?android:colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:menu="@menu/option_menu"
+            app:title="@string/app_name" />
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search_view"
@@ -22,9 +28,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:focusable="false"
-            android:background="@color/white"
+            android:background="@drawable/background_search_view"
             app:iconifiedByDefault="false"
-            app:queryHint="Search Github Username" />
+
+            app:queryHint="@string/search_hint" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
